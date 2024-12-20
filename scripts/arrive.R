@@ -5,7 +5,7 @@
 # specify run date --------------------------------------------------------
 
 run_date <- '2024-07-17'
-
+dir.create("results/", showWarnings = FALSE)
 
 # load packages -----------------------------------------------------------
 
@@ -107,7 +107,7 @@ DATA <- list(y = as.vector(arr_df$arr_GAM_mean),
 # fit model ---------------------------------------------------------------
 
 options(mc.cores = parallel::detectCores())
-set_cmdstan_path('c:/Users/Mike/Documents/.cmdstan/cmdstan-2.33.1/')
+set_cmdstan_path('c:/Users/micha/.cmdstan/cmdstan-2.35.0/')
 # DELTA <- 0.92
 # TREE_DEPTH <- 12
 # STEP_SIZE <- 0.03
